@@ -1,3 +1,13 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary-color: rgb(30, 30, 30);
+    --secondary-color: rgb(45, 45, 45);
+}
+
+body {
+    margin: 0;
 }
