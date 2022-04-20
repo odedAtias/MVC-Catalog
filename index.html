@@ -8,13 +8,20 @@
     <title>Movies Catalog</title>
     <!-- StyleSheets -->
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
     <!-- Header Division -->
     <header>
+        <!-- Logo -->
+        <h2 id="logo"><a href="index.html">
+                MVC <i class="fa-solid fa-film"></i>
+            </a></h2>
         <form>
-            <input type="text" class="search" id="search" placeholder="Search">
+            <input style="font-family: 'Font Awesome 5 Free'; font-weight: 700;" type="text" id="search"
+                placeholder=" &#xf002; Search ">
         </form>
     </header>
     <!-- Main Divsion -->
@@ -25,8 +32,14 @@
                 alt="">
             <!-- Movie Info Division -->
             <div class="movie-info">
-                <h3>Movie Name</h3>
-                <span class="green">8.7</span>
+                <h2>Movie Name</h2>
+                <span class="recommended">8.7</span>
+            </div>
+            <!-- Movie Overview Division -->
+            <div class="overview">
+                <h4>Movie Overview</h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quidem sed? Harum obcaecati maiores,
+                optio labore maxime id consequuntur aliquid!
             </div>
         </div>
     </main>
@@ -35,5 +48,8 @@
 </body>
 <!-- Scripts -->
 <script src="app.js"></script>
+<!-- FontAwesome Kit -->
+<script src="https://kit.fontawesome.com/21a8813ed5.js" crossorigin="anonymous">
+</script>
 
 </html>
