@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/* Projects main colors */
 :root {
     --primary-color: #FE7860;
     --secondary-color: #506CF0;

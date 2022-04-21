@@ -12,45 +12,49 @@ const main = document.getElementsByTagName('main')[0];
 const form = document.getElementsByTagName('form')[0];
 const search = document.getElementById('search');
 
-//Function to get initial movies
+//Project's Functions
+
+//GetMovies() - Function to get initial movies from the TMDB DataBase
 async function getMovies(url) {
 	const res = await fetch(url),
 		data = await res.json();
 	showMovies(data.results);
 }
-//
 getMovies(API_URL);
 
+//showMovies() - Function to show the movies on the screen
 function showMovies(movies) {
 	main.innerHTML = '';
 	movies.forEach(movie => {
 		const { title, poster_path, vote_average, overview } = movie;
+		// Create for each movie a division with her info
 		const movieElement = document.createElement('div');
 		movieElement.classList.add('movie');
 		movieElement.innerHTML = ` 
         <img src="${IMG_PATH + poster_path}"
             alt="${title}">
-        <!-- Movie Info Division -->
         <div class="movie-info">
             <h2>${title}</h2>
-            <span class="${getClassByRate(vote_average)}">${vote_average}</span>
+            <span class="${getColorByRate(vote_average)}">${vote_average}</span>
         </div>
-        <!-- Movie Overview Division -->
         <div class="overview">
             <h4>Movie Overview</h4>
             ${overview}
         </div>
     `;
+		// Append the movie element to the main
 		main.appendChild(movieElement);
 	});
 }
 
-function getClassByRate(vote) {
+// getColorByRate() - Function to get color by the movie's rate
+function getColorByRate(vote) {
 	if (vote >= 8) return 'recommended';
 	else if (vote >= 5) return 'nice';
 	else return 'likley';
 }
 
+//Project's Event Listeners
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	const searchTerm = search.value;
