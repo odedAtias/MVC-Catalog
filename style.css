@@ -131,3 +131,11 @@ main {
 .movie:hover .overview {
     transform: translateY(0);
 }
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+}
