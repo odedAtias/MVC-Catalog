@@ -3,9 +3,9 @@
 }
 
 :root {
-    --primary-color: rgb(30, 30, 30);
-    --secondary-color: rgb(45, 45, 45);
-    --third-color: rgb(60, 60, 60);
+    --primary-color: #FE7860;
+    --secondary-color: #506CF0;
+    --third-color: #A7C0CD;
 }
 
 body {
@@ -18,9 +18,10 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--secondary-color);
+    background-color: white;
     align-items: center;
     padding: 15px;
+    border-radius: 5px;
 }
 
 #logo {
@@ -28,19 +29,17 @@ header {
 }
 
 #logo a {
-    background-color: #dea66f;
+    background-color: white;
     text-decoration: none;
     padding: 10px 15px;
-    border: solid #dea66f;
     border-radius: 15px;
-    color: var(--primary-color);
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 700;
+    color: black;
     font-size: 20px;
+    border: 2px solid var(--primary-color);
 }
 
 #search {
-    background-color: transparent;
+    background-color: white;
     border: 2px solid var(--primary-color);
     border-radius: 15px;
     font-size: 15px;
@@ -48,13 +47,13 @@ header {
 }
 
 #search::placeholder {
-    color: white;
+    color: black;
 }
 
 #search:focus {
     outline: none;
-    background-color: var(--primary-color);
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 main {
@@ -65,14 +64,13 @@ main {
 .movie {
     width: 300px;
     margin: 15px;
-    background-color: var(--secondary-color);
+    background-color: white;
     overflow: hidden;
     position: relative;
     border-radius: 5px;
-    border: 1px solid;
     /* padding: 10px; */
     box-shadow: 5px 10px var(--third-color);
-    color: white;
+    color: black;
     text-shadow: 0 0 3px black;
 }
 
@@ -88,12 +86,12 @@ main {
 }
 
 .movie-info span {
-    background-color: var(--primary-color);
+    background-color: white;
     padding: 5px 10px;
     border-radius: 7.5px;
-    border: solid 1px white;
+    border: solid 1px;
     margin-left: 75px;
-    text-shadow: none
+    text-shadow: none;
 }
 
 .overview {
@@ -114,10 +112,9 @@ main {
 }
 
 .overview {
-    background-color: var(--third-color);
     padding: 7.5px 15px 15px 15px;
-    background-color: white;
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: black;
     position: absolute;
     left: 0;
     bottom: 0;
