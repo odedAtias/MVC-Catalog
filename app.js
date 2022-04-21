@@ -14,7 +14,7 @@ const search = document.getElementById('search');
 
 //Project's Functions
 
-//GetMovies() - Function to get initial movies from the TMDB DataBase
+//GetMovies() - Function to initial movies according to the URL received
 async function getMovies(url) {
 	const res = await fetch(url),
 		data = await res.json();
@@ -48,9 +48,9 @@ function showMovies(movies) {
 }
 
 // getColorByRate() - Function to get color by the movie's rate
-function getColorByRate(vote) {
-	if (vote >= 8) return 'recommended';
-	else if (vote >= 5) return 'nice';
+function getColorByRate(rate) {
+	if (rate >= 8) return 'recommended';
+	else if (rate >= 5) return 'nice';
 	else return 'likley';
 }
 
