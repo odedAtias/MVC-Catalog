@@ -16,7 +16,7 @@ A project to create a nice template for a movie catalog website, each movie cont
 
 ## Implementation Remarks
 
-🔸 I have added to the program 3 main methodes that will help me perform the task in a simpler way:
+1️⃣ I have added to the program 3 main methodes that will help me perform the task in a simpler way:
 
 1. getMovies(url) - Function to initial movies according to the URL received.
 2. showMovies(movies) - Function to show the movies on the screen.
