@@ -1,13 +1,17 @@
 # MVC-Catalog
+
 A project to create a nice template for a movie catalog website, each movie contains:
 
-🔹 Her name 
+🔹 Her name
 
 🔹 Overview of it
 
 🔹 The score he recieved (the range is 0-10).
 
+![MVC](MVC.png)
+
 ## Technologies
+
 👉 HTML
 
 👉 CSS
@@ -44,4 +48,3 @@ if(haveAnyQuestions === true){
     sendEmailToMe(yourName,question,odedatias8115@gmail.com);
 }
 ```
-
