@@ -1,4 +1,4 @@
-# MVC-Catalog
+# MVC-Catalog 🎬
 
 A project to create a nice template for a movie catalog website, each movie contains:
 
