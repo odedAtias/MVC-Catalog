@@ -18,7 +18,7 @@ A project to create a nice template for a movie catalog website, each movie cont
 
 👉 JavaScript
 
-## Implementation Remarks
+
 
 1️⃣ I have added to the program 3 main methodes that will help me perform the task in a simpler way:
 
